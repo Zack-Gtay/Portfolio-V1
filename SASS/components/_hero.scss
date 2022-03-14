@@ -1,0 +1,49 @@
+//font-family: 'Playfair Display', serif;
+//font-family: 'Montserrat', sans-serif;
+
+.hero{
+    
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+
+    &__container{
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+        padding: 10rem;
+
+        &__greeting{
+            color: var(--delta);
+            font-size: 40rem;
+            margin-top: 10rem;
+        }
+
+        &__name{
+            font-size: 60rem !important;
+            color: var(--light);
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10rem;
+        }
+        
+        &__todo{
+            color: rgba(244, 244, 244, .9);
+            font-size: 40rem;
+            margin-top: 10rem;
+        }
+
+        &__description{
+            color: rgba(244, 244, 244, .9);
+            line-height: 30rem;
+            margin-top: 10rem;
+        }
+        
+        &__stickerContainer{
+            margin: 0 auto;
+            margin-top: 10rem;
+        }
+    }
+
+    
+}
