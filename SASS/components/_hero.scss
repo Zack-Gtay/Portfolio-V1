@@ -15,12 +15,12 @@
 
         &__greeting{
             color: var(--delta);
-            font-size: 40rem;
-            margin-top: 10rem;
+            font-size: 35rem;
+            margin-top: 20rem;
         }
 
         &__name{
-            font-size: 60rem !important;
+            font-size: 55rem !important;
             color: var(--light);
             font-weight: bold;
             font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,7 @@
         
         &__todo{
             color: rgba(244, 244, 244, .9);
-            font-size: 40rem;
+            font-size: 35rem;
             margin-top: 10rem;
         }
 
@@ -41,7 +41,8 @@
         
         &__stickerContainer{
             margin: 0 auto;
-            margin-top: 10rem;
+            margin-top: 20rem;
+            
         }
     }
 
