@@ -1,0 +1,13 @@
+// VARIABLES
+@import "variables/colours.scss";
+
+// RESETS
+@import "resets/normalize.scss";
+@import "resets/reset.local.scss";
+@import "resets/responsive.scss";
+@import "resets/typography.scss";
+@import "resets/placeholder.scss";
+
+
+// COMPONENTS
+@import "./components/nav.scss"
