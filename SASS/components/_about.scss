@@ -1,0 +1,48 @@
+.aboutme{
+    padding: 10rem;
+    margin-top: 150rem;
+    &__header{
+        
+        display: flex;
+        font-size: 20rem;
+        font-family: 'Montserrat', sans-serif;
+        h2{
+            font-size: 25rem;
+        }
+        &__title{
+            
+            color: var(--light);
+            span{
+                color: var(--delta);
+                margin-right: 10px;
+            }
+        }
+        img{
+               margin-left: 10px;
+        }
+    }
+
+    &__content{
+        margin-top: 20rem;
+        color: rgba(244, 244, 244, .9);
+        font-size: 20rem;
+        p{
+            line-height: 30rem;
+            font-size: 20rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 20rem;
+            li{
+                margin-top: 20rem;
+            }
+            img{
+                margin-right: 10rem;
+            }
+        }
+    }
+}
