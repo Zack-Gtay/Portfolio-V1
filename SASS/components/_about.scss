@@ -1,3 +1,8 @@
+body{
+    scroll-behavior: smooth;
+}
+
+
 .aboutme{
     padding: 10rem;
     margin-top: 150rem;
@@ -68,7 +73,7 @@
         border-left: 5rem solid var(--delta);
 
         img{
-            padding: 10rem;
+            padding: 10rem  ;
         }
         img:hover::before {
             -webkit-animation: shine .75s;
