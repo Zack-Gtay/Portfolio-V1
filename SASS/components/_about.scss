@@ -4,6 +4,7 @@
     &__header{
         
         display: flex;
+        
         font-size: 20rem;
         font-family: 'Montserrat', sans-serif;
         h2{
@@ -44,6 +45,28 @@
             img{
                 margin-right: 10rem;
             }
+        }
+    }
+
+    &__picWrapper{
+        
+        
+        margin-top: 60rem;
+        
+        
+    }
+    &__shape{
+        display: block;
+        margin: 0 auto;
+        
+        //align-items: center;
+        width: 320px;   
+        height: 320px;
+        border-top: 5rem solid var(--delta);
+        border-left: 5rem solid var(--delta);
+
+        img{
+            padding: 10rem;
         }
     }
 }
