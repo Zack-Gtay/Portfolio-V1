@@ -80,7 +80,8 @@
                     <h2 class="aboutme__header__title"><span>1.</span>About Me</h2>
                     <img src="./images/line.svg" alt="">
                 </div>
-    
+
+
                 <div class="aboutme__content">
                     <p>Hello!<br>My name is Zack, and I like to make stuff that can be found on the internet.
                         My fascination with web programming began in 2019, when I decided to experiment with rebuilding some existing themes – it turns out that piecing together a custom tags taught me a lot about HTML and CSS!<br><br>
@@ -101,8 +102,11 @@
             
             <div class="aboutme__picWrapper">
                 <div class="aboutme__shape">
-                    <img src="./images/mypic-small.svg" alt="">
-                </div>
+                    <picture>
+                        <source srcset="./images/mypic-big.svg" media="(min-width: 767px)">
+                        <source srcset="./images/mypic-small.svg">
+                        <img src="./images/mypic-small.svg" alt="">
+                    </picture>                </div>
                 
             </div>
 
