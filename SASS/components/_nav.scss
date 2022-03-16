@@ -41,10 +41,13 @@
             letter-spacing: 1rem;
             font-family: 'Montserrat', sans-serif;
         }
-       
+        li:last-of-type{
+            margin-left: 35rem;
+        }
 
         button {
             margin-top: 17rem;
+            
             font-size: 20rem;
             font-family: 'Montserrat', sans-serif;
             letter-spacing: 1rem;

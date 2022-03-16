@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var html = '';
-    for (var i = 1; i <= 50; i ++) {
+    for (var i = 1; i <= 25; i ++) {
         html += '<div class="shape-container--'+i+' shape-animation"><div class="random-shape"></div></div>';
     }
       
