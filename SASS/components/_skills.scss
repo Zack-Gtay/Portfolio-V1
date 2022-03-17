@@ -2,6 +2,9 @@
     margin-top: 180rem;
     padding: 10rem;
 
+    &__shapes{
+        display:none;
+    }
     &__header{
         display: flex;
 
