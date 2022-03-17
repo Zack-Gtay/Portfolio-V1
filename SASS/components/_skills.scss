@@ -181,4 +181,54 @@
             }
         }
     }
+
+
+    @include respond-to('small'){
+        display: grid;
+        grid-template-columns: 1fr minmax(500rem, 520rem)  minmax(500rem, 560rem) 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: -500rem;
+        &__container{
+            grid-column: 2/3;
+            margin-left: 80rem;
+        }
+        &__wrapper{
+            grid-column: 3/4;
+            margin-top: 62rem;
+            margin-left: 90rem;
+        }
+        &__knowledge{
+            margin-left: 50rem;
+        }
+
+        &__dev{
+            &__list{
+                margin-top: -20rem;
+            }
+        }
+
+        &__tools{
+            &__list{
+                margin-top: 20rem; 
+            }
+        }
+
+        &__knowledge{
+            &__list{
+                margin-top: 20rem; 
+            }
+        }
+
+        &__design{
+            margin-top: -70rem;
+            &__list{
+                margin-top: 20rem; 
+            }
+        }
+        &__shapes{
+            display:block;
+            grid-row: 2/3;
+            grid-column: 5/6;
+        }
+    }
 }

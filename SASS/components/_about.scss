@@ -3,6 +3,11 @@
 .aboutme{
     padding: 10rem;
     margin-top: 150rem;
+
+
+    &__shapes{
+        display: none;
+    }
     &__header{
         
         display: flex;
@@ -145,6 +150,11 @@
             margin-left: 80rem;
             width: 320px;   
             height: 500px;
+        }
+
+        &__shapes{
+            display:block;
+            grid-row: 2/3;
         }
     }
 }
