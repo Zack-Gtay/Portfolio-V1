@@ -1,0 +1,27 @@
+.experience{
+    margin-top: 180rem;
+    padding: 10rem;
+
+    
+    &__header{
+        display: flex;
+
+        &__title{
+            font-size: 20rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--light);
+            span{
+                color: var(--delta);
+                margin-right: 10px;
+            }
+        }
+
+        img{
+            margin-left: 10px;
+        }
+    }
+
+    
+    
+
+}
