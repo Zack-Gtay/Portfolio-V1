@@ -1,11 +1,11 @@
 .experience{
-    margin-top: 180rem;
+    
     padding: 10rem;
 
     
     &__header{
         display: flex;
-
+        margin-top: 30rem;
         &__title{
             font-size: 20rem;
             font-family: 'Montserrat', sans-serif;
@@ -21,7 +21,62 @@
         }
     }
 
+    &__list{
+        color: var(--delta);
+        margin-top: 10rem;
+        padding: 10rem;
+        width: 100%;
+        ul{
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        li{
+            
+            display: 0 0 auto;
+            width: 100%;
+            
+            font-size: 20rem;
+            margin-right: 20rem;
+        }
+        
+    }
     
+
+    &__jobDescription{
+        margin-top: 5rem;
+        color: var(--light);
+        &__title{
+            font-size: 20rem;
+            span{
+                color: var(--delta);
+            }
+        }
+
+        &__period{
+            margin-top: 5rem;   
+
+        }
+
+        &__tasks{
+            color: var(--lightt);
+            font-size: 17rem;
+            margin-top: 10rem;
+
+            &__arrow{
+                margin-right: 10rem;
+                margin-top: 15rem;
+                line-height: 10rem;
+            }
+          
+        }
+    }
     
+
+    @include respond-to('small'){
+        &__list{
+            width: 50%;
+        }
+    }
 
 }
