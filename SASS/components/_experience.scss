@@ -7,9 +7,10 @@
         display: flex;
         margin-top: 30rem;
         &__title{
-            font-size: 20rem;
+            font-size: 25rem;
             font-family: 'Montserrat', sans-serif;
             color: var(--light);
+            margin-bottom: 15rem;
             span{
                 color: var(--delta);
                 margin-right: 10px;
