@@ -1,6 +1,8 @@
 .projects{
+    position: relative;
     
 
+    
     &__header{
         display: flex;
         margin-top: 30rem;
@@ -18,17 +20,72 @@
             margin-left: 15px;
         }
     }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: min-content min-content ;
 
-    &__mockup{
-        padding: 50rem;
-        
-        img{
+
+        &__mockup{
+            grid-row: 1/2;
+            padding: 50rem;
             
+            img{
+                align-self: center;
+                width: 80%;
+                margin-left: 33rem;
+            }
+            
+            img:last-child {
+                display: none;  
+            }
+            span:hover img:last-child {
+                display: block;  
+                margin: 0 auto;
+            }
+            span:hover img:first-child {
+                display: none;  
+            }
+        }
+    
+        &__featuredProject{
+            -webkit-box-shadow: -5px -6px 18px -6px rgba(0,0,0,0.58); 
+            box-shadow: -5px -6px 18px -6px rgba(0,0,0,0.58);;
+            grid-row: 2/3;
+            background-color: var(--alpha);
+            display: block;
+            top: -100px;
+            position: relative;
+            margin-top: -500rem;
+            margin: 0 auto;
             width: 90%;
+            padding: 20rem;
+            h6{
+                color: #00FFBB;
+                margin-bottom: 5rem;
+            }
+            h3{
+                font-size: 20rem;
+                color: var(--light);
+                margin-bottom: 15rem;
+            }
+
+            p{
+                margin-bottom: 10rem;
+            }
+            p, ul{
+                color: var(--light);
+            }
+            li{
+                list-style:inside
+            }
         }
     }
 
-    &__featuredProject{
-        background-color: var(--alpha);
+    &__wrapper2{
+        margin-top: -100rem;
     }
+
+    
+    
 }
