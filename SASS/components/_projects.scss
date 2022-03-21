@@ -1,0 +1,34 @@
+.projects{
+    
+
+    &__header{
+        display: flex;
+        margin-top: 30rem;
+        &__title{
+            font-size: 25rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--light);
+            span{
+                color: var(--delta);
+                margin-right: 10px;
+            }
+        }
+
+        img{
+            margin-left: 15px;
+        }
+    }
+
+    &__mockup{
+        padding: 50rem;
+        
+        img{
+            
+            width: 90%;
+        }
+    }
+
+    &__featuredProject{
+        background-color: var(--alpha);
+    }
+}

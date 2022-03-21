@@ -1,7 +1,7 @@
 .experience{
     
     padding: 10rem;
-
+    
     
     &__header{
         display: flex;
@@ -17,7 +17,7 @@
         }
 
         img{
-            margin-left: 10px;
+            margin-left: 15px;
         }
     }
 
@@ -28,16 +28,20 @@
         width: 100%;
         ul{
             display: flex;
+            
             flex-direction: row;
             overflow: scroll;
+            width: 100%;
         }
         li{
             
+            height: 30rem;
             display: 0 0 auto;
             width: 100%;
-            
+            margin-top: 10rem;
             font-size: 20rem;
             margin-right: 20rem;
+            position: relative;
         }
         
     }
@@ -74,8 +78,14 @@
     
 
     @include respond-to('small'){
-        &__list{
-            width: 50%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: -500rem;
+
+        &__jobDescription{
+            margin: 20rem auto;
+            
+            width: 90%;
         }
     }
 
