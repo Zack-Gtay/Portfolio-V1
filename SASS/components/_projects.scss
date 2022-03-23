@@ -1,7 +1,7 @@
 .projects{
     position: relative;
     
-
+    margin-top: 130rem;
     
     &__header{
         display: flex;
@@ -22,7 +22,7 @@
     }
     &__wrapper{
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
         grid-template-rows: min-content min-content ;
 
 
@@ -33,7 +33,7 @@
             img{
                 align-self: center;
                 width: 80%;
-                margin-left: 33rem;
+                margin-left: 43rem;
             }
             
             img:last-child {
@@ -80,6 +80,44 @@
                 list-style:inside
             }
         }
+
+
+
+        &__footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr min-content;
+        }
+
+        &__techUsed{
+            grid-column: 1/2;
+            display: flex;
+            margin-top: 30rem;
+            li{
+                list-style: none;
+                bottom: 0;
+                margin-right: 20rem;
+                float: right;
+                font-size: 15rem;
+            }
+            
+            
+        }
+
+        &__links{
+            grid-column: 3/4;
+            display: flex;
+            margin-top: 20rem;
+            
+            li{
+                list-style: none;
+                bottom: 0;
+                align-self: center;
+                margin-left: 10rem ;
+                font-size: 15rem;
+            }
+        }
+
+        
     }
 
     &__wrapper2{
@@ -87,5 +125,57 @@
     }
 
     
+    @include respond-to('small'){
+        display: grid;
+
+        grid-template-columns: 1fr minmax(597rem, 600rem) 1fr;
+        grid-template-rows: min-content 1fr;
+
+        &__header{
+            display: flex;
+            grid-column: 2/3;
+            img{
+                width: 10rem;
+            }
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: minmax(400rem, 500rem) min-content;
+            grid-template-rows: 1fr 1fr 1fr;
+            &__mockup{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            &__techUsed{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            &__featuredProject{
+                grid-column: 2/3;
+                grid-row: 1/2;
+
+                display: grid;
+                grid-template-columns: min-content min-content;
+                grid-template-rows: min-content min-content min-content  min-content min-content;
+
+                h6{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+                h3{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                p,ul{
+                    grid-column: 1/2;
+                    grid-row: 3/2;
+                }
+
+            }
+        }
+        &__oveWrapper{
+            grid-column: 2/3;
+        }
+    }
     
 }
