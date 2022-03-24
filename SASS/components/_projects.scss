@@ -126,56 +126,33 @@
 
     
     @include respond-to('small'){
-        display: grid;
-
-        grid-template-columns: 1fr minmax(597rem, 600rem) 1fr;
-        grid-template-rows: min-content 1fr;
-
-        &__header{
+       margin: 0 auto;
+        padding: 100rem;
+        &__oveWrapper{
             display: flex;
-            grid-column: 2/3;
-            img{
-                width: 10rem;
-            }
+            flex-wrap: wrap;
+            padding: 80rem;
         }
         &__wrapper{
-            display: grid;
-            grid-template-columns: minmax(400rem, 500rem) min-content;
-            grid-template-rows: 1fr 1fr 1fr;
+            flex: 1 1 50%;
+            margin: 0 auto;
             &__mockup{
-                grid-column: 1/2;
-                grid-row: 1/2;
+                img{
+                    width: 80%;
+                }
             }
-            &__techUsed{
-                grid-column: 2/3;
-                grid-row: 2/3;
+
+            &__footer{
+                
+                margin-top:50rem;
             }
-            &__featuredProject{
-                grid-column: 2/3;
-                grid-row: 1/2;
-
-                display: grid;
-                grid-template-columns: min-content min-content;
-                grid-template-rows: min-content min-content min-content  min-content min-content;
-
-                h6{
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                }
-                h3{
-                    grid-column: 2/3;
-                    grid-row: 2/3;
-                }
-                p,ul{
-                    grid-column: 1/2;
-                    grid-row: 3/2;
-                }
-
+            
+            &__links{
+                margin-top: -10rem;
             }
         }
-        &__oveWrapper{
-            grid-column: 2/3;
-        }
+
+        
     }
     
 }
