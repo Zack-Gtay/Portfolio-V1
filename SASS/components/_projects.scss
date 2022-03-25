@@ -128,6 +128,8 @@
     @include respond-to('small'){
        margin: 0 auto;
         padding: 100rem;
+
+        
         &__oveWrapper{
             display: flex;
             flex-wrap: wrap;
@@ -135,7 +137,8 @@
         }
         &__wrapper{
             flex: 1 1 50%;
-            margin: 0 auto;
+            margin: -20rem auto;
+            height: calc(100% + 50rem);
             &__mockup{
                 img{
                     width: 80%;
@@ -144,11 +147,16 @@
 
             &__footer{
                 
-                margin-top:50rem;
+                margin-top:40rem;
             }
             
             &__links{
-                margin-top: -10rem;
+                
+                img{
+                    width: 25rem;
+                    
+                }
+               
             }
         }
 
