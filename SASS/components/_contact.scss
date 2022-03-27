@@ -1,0 +1,51 @@
+.contact{
+    color: var(--lightt);
+
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: min-content minmax(150rem, 110rem) min-content;
+    align-items: center;
+    justify-items: center;
+   
+    h2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 35rem;
+        font-weight: bolder;
+        color: var(--light);
+        
+    }
+    p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 35rem;
+        text-align: center;
+        margin-top: 10rem;
+        line-height: 25rem;
+    }
+    button{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: 30rem;
+        border: solid 1.5rem var(--delta);
+        border-radius: 5px;
+        padding: 15rem 30rem;
+        color: var(--delta);
+    }
+
+
+    @include respond-to('small'){
+        display: grid;
+        grid-template-columns: 1fr minmax(590rem, 597rem) 1fr;
+        grid-template-rows: min-content minmax(150rem, 110rem) min-content;
+        
+        margin-top: -70rem;
+
+        p{
+            margin-top: -15rem;
+        }
+        button{
+            margin-top: -5rem;
+        }
+    }
+}

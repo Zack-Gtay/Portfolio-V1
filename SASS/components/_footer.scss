@@ -1,0 +1,24 @@
+footer{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: min-content min-content;
+    align-items: center;
+    justify-items: center;
+    margin-top: 60rem;
+    ul{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        li{
+            margin-left: 15rem;
+        }
+    }
+
+    p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: Hack, monospace;
+        color: var(--lightt);
+        margin-bottom: 10rem;
+    }
+}

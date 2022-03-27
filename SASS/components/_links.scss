@@ -1,54 +1,53 @@
 .links{
     
 
+    display: none;
 
-
-    @include respond-to('small'){
+    // @include respond-to('small'){
         
-        display: grid;
-        grid-template-columns: minmax(100rem ,100rem) 1fr 1fr 1fr 1fr 1fr 1fr;
-        position:fixed;
+    //     display: grid;
+    //     grid-template-columns: minmax(100rem ,100rem) 1fr 1fr 1fr 1fr min-content ;
+    //     position:fixed;
         
-        bottom: 0;
+    //     bottom: 0;
 
-        &__container{
-                grid-column: 1/2;
-                justify-self: end;
-                display:inline-block;
-                text-align:center;
-            ul{
+    //     &__container{
+    //             grid-column: 1/2;
+    //             justify-self: end;
+    //             display:inline-block;
+    //             text-align:center;
+    //         ul{
                 
     
-                li{
-                    margin-top: 10rem;
-                }
-            }
-        }
+    //             li{
+    //                 margin-top: 10rem;
+    //             }
+    //         }
+    //     }
 
-        &__mail{
-            grid-column: 7/8;
-            justify-self: end;
-            display:inline-block;
-            text-align:center;
-            bottom: 0;
-            margin-left: 30rem;
-            &__address{
+    //     &__mail{
+    //         grid-column: 5/6;
+    //         align-items: flex-end;
+    //         justify-content: flex-end;
+    //         display:inline-block;
+    //         text-align:center;
+            
+    //         margin-right: 0rem;
+            
+    //         &__address{
                 
-                p{
-                    color: var(--light);
-                    margin-bottom: 20rem;
-                    margin-left: -30rem;
-                    letter-spacing: 5rem;
-                }
+    //             p{
+    //                 color: var(--light);
+    //                 margin-bottom: 20rem;
+                    
+    //                 letter-spacing: 5rem;
+    //             }
     
-            }
-            li{
-                margin-top: 71rem;
-                
-            }        
+    //         }
+                    
     
-        }
+    //     }
         
         
-    }
+    // }
 }
