@@ -23,7 +23,7 @@
         margin-top: 10rem;
         line-height: 25rem;
     }
-    button{
+    a{
         grid-column: 2/3;
         grid-row: 3/4;
         margin-top: 30rem;
@@ -31,6 +31,7 @@
         border-radius: 5px;
         padding: 15rem 30rem;
         color: var(--delta);
+        cursor: pointer;
     }
 
 
